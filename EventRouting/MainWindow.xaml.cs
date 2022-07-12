@@ -57,5 +57,25 @@ namespace EventRouting
                 //Ausgabe
                 Tbl_Output.Text += (sender as FrameworkElement).Name + " TextBoxBase.TextChanged\n";
         }
+
+        private void SP_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if ((sender as FrameworkElement).Name == "Aqua")
+                Tbl_Output.Text += "Origin: " + (e.OriginalSource as FrameworkElement).Name + "\n";
+            //Ausgabe
+            Tbl_Output.Text += (sender as FrameworkElement).Name + " Preview/Tunnel\n";
+        }
+
+        private void SP_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Ausgabe
+            Tbl_Output.Text += (sender as FrameworkElement).Name + " Bubble\n";
+
+            if((sender as FrameworkElement).Name == "Gelb")
+            {
+                e.Handled = true;
+                Tbl_Output.Text += "Handeld\n";
+            }
+        }
     }
 }

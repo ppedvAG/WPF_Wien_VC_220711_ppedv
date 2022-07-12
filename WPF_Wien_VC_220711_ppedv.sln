@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_HalloWPF", "HalloWPF\Modul01_HalloWPF.csproj", "{CF1DE419-4B35-4619-A540-86F09995726C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul01_HalloWPF", "HalloWPF\Modul01_HalloWPF.csproj", "{CF1DE419-4B35-4619-A540-86F09995726C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02_Controls", "Controls\Modul02_Controls.csproj", "{8DB630C5-2285-479C-8FB5-985DB1757286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02_Controls", "Controls\Modul02_Controls.csproj", "{8DB630C5-2285-479C-8FB5-985DB1757286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{A82E5091-61CE-4E19-BEA1-3F9E4B813E8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{A82E5091-61CE-4E19-BEA1-3F9E4B813E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_Container", "Container\Modul03_Container.csproj", "{811639AF-777B-4526-93C9-A39424C6F0EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03_Container", "Container\Modul03_Container.csproj", "{811639AF-777B-4526-93C9-A39424C6F0EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04_EventRouting", "EventRouting\Modul04_EventRouting.csproj", "{32294287-C0D9-4091-BBC9-8839BEC185B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04_EventRouting", "EventRouting\Modul04_EventRouting.csproj", "{32294287-C0D9-4091-BBC9-8839BEC185B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBinding", "PropertyBinding\PropertyBinding.csproj", "{F0D573E3-C9F2-4831-A20E-1C2B05672721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{32294287-C0D9-4091-BBC9-8839BEC185B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32294287-C0D9-4091-BBC9-8839BEC185B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32294287-C0D9-4091-BBC9-8839BEC185B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D573E3-C9F2-4831-A20E-1C2B05672721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D573E3-C9F2-4831-A20E-1C2B05672721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D573E3-C9F2-4831-A20E-1C2B05672721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D573E3-C9F2-4831-A20E-1C2B05672721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

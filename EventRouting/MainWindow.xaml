@@ -9,12 +9,27 @@
         x:Name="Wnd_Main"
         ButtonBase.Click="Wnd_Main_Click"
         TextBoxBase.TextChanged="Wnd_Main_TextChanged">
-    <StackPanel>
-        <Button x:Name="Btn_Klick" Content="Klick" 
+    <StackPanel x:Name="Aqua" Background="Aqua"
+                PreviewMouseDown="SP_PreviewMouseDown"
+                MouseDown="SP_MouseDown">
+        <StackPanel x:Name="Grün" Background="Green" Margin="20"
+                PreviewMouseDown="SP_PreviewMouseDown"
+                MouseDown="SP_MouseDown">
+            <StackPanel x:Name="Gelb" Background="Yellow" Margin="20"
+                PreviewMouseDown="SP_PreviewMouseDown"
+                MouseDown="SP_MouseDown">
+                <StackPanel x:Name="Blau" Background="Blue" Margin="20" Height="50"
+                PreviewMouseDown="SP_PreviewMouseDown"
+                MouseDown="SP_MouseDown">
+
+                    <Button x:Name="Btn_Klick" Content="Klick" 
                             Click="Btn_Klick_Click"/>
-        <TextBox x:Name="Tbx_Text" Text="Text" 
+                    <TextBox x:Name="Tbx_Text" Text="Text" 
                              TextChanged="Tbx_Text_TextChanged"/>
 
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
         <TextBlock x:Name="Tbl_Output" Height="200" Background="White"/>
         <Button x:Name="Btn_BaseTest" Content="ButtonBase-Test"/>
         <TextBox x:Name="Tbx_BaseTest" Text="TextBoxBase-Test"/>
