@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul08_Templates", "Templa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul09_Validation", "Validation\Modul09_Validation.csproj", "{233D7484-174F-480D-A5D0-4474DFAD2071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10_Trigger", "Trigger\Modul10_Trigger.csproj", "{81622A52-93C5-4C0F-9A47-E5E26572C03A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul10_Trigger", "Trigger\Modul10_Trigger.csproj", "{81622A52-93C5-4C0F-9A47-E5E26572C03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControls", "UserControls\UserControls.csproj", "{161D6204-58FD-486D-913F-8BBE1A64794B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{81622A52-93C5-4C0F-9A47-E5E26572C03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81622A52-93C5-4C0F-9A47-E5E26572C03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81622A52-93C5-4C0F-9A47-E5E26572C03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161D6204-58FD-486D-913F-8BBE1A64794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161D6204-58FD-486D-913F-8BBE1A64794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161D6204-58FD-486D-913F-8BBE1A64794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161D6204-58FD-486D-913F-8BBE1A64794B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
