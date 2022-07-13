@@ -32,14 +32,12 @@ namespace Personendatenbank
         public Gender Geschlecht { get => geschlecht; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Geschlecht))); geschlecht = value; } }
 
         public string Error => null;
-
         public string this[string columnName]
         {
             get
             {
                 switch (columnName)
                 {
-
                     case nameof(Vorname):
                         if (Vorname.Length <= 0 || Vorname.Length > 50) return "Bitte geben Sie Ihren Vornamen ein.";
                         if (!Vorname.All(x => Char.IsLetter(x))) return "Der Vorname darf nur Buchstaben enthalten.";
