@@ -47,6 +47,7 @@ namespace Trigger
         private void Btn_Ändern_Click(object sender, RoutedEventArgs e)
         {
             BoolVal = !BoolVal;
+            Spl_Main.Background = new SolidColorBrush(Colors.Red);
         }
     }
 }

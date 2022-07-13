@@ -10,7 +10,7 @@
         Title="MainWindow" Height="363" Width="267" WindowStartupLocation="CenterScreen">
     <!--Mittels Triggern kann das Verhalten/Aussehen von Objekten unter bestimmten Umständen geändert werden-->
     <StackPanel x:Name="Spl_Main"
-                Background="{Binding ElementName=ColorPicker, Path=PickedColor}">
+                Background="{Binding ElementName=ColorPicker, Path=PickedColor, Mode=TwoWay}">
         <StackPanel.Triggers>
             <!--EventTrigger reagieren auf ein geworfenes RoutedEvent und werden dafür verwendet,
             Storyboards zu starten. EventTrigger sind die einzige Triggerart, die direkt in die 

@@ -89,16 +89,16 @@
 
             <Rectangle x:Name="Rct_Output" Width="100" Height="100">
                 <Rectangle.Fill>
-                    <MultiBinding>
+                    <MultiBinding Mode="TwoWay">
 
                         <MultiBinding.Converter>
                             <local:DoublesToBrushConverter/>
                         </MultiBinding.Converter>
 
-                        <Binding ElementName="Sdr_Red" Path="Value"/>
-                        <Binding ElementName="Sdr_Green" Path="Value"/>
-                        <Binding ElementName="Sdr_Blue" Path="Value"/>
-                        <Binding ElementName="Sdr_Alpha" Path="Value"/>
+                        <Binding ElementName="Sdr_Red" Path="Value" Mode="TwoWay"/>
+                        <Binding ElementName="Sdr_Green" Path="Value" Mode="TwoWay"/>
+                        <Binding ElementName="Sdr_Blue" Path="Value" Mode="TwoWay"/>
+                        <Binding ElementName="Sdr_Alpha" Path="Value" Mode="TwoWay"/>
                     </MultiBinding>
                 </Rectangle.Fill>
 

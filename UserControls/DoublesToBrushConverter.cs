@@ -16,7 +16,8 @@ namespace UserControls
 
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            SolidColorBrush brush = (SolidColorBrush)value;
+            return new object[] { (double)brush.Color.R, (double)brush.Color.G, (double)brush.Color.B, (double)brush.Color.A};
         }
     }
 }
