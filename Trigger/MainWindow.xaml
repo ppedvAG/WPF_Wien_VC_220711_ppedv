@@ -4,10 +4,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:usercontrols="clr-namespace:UserControls;assembly=UserControls"
+        xmlns:usercontrols="clr-namespace:UserControls;assembly=Modul11_UserControls"
         xmlns:local="clr-namespace:Trigger"
         mc:Ignorable="d"
-        Title="MainWindow" Height="363" Width="267">
+        Title="MainWindow" Height="363" Width="267" WindowStartupLocation="CenterScreen">
     <!--Mittels Triggern kann das Verhalten/Aussehen von Objekten unter bestimmten Umständen geändert werden-->
     <StackPanel x:Name="Spl_Main"
                 Background="{Binding ElementName=ColorPicker, Path=PickedColor}">
@@ -61,6 +61,8 @@
 
         <Separator Margin="10"/>
 
-        <usercontrols:ColorPicker x:Name="ColorPicker" ShowRectangle="True"/>
+        <!--Beispiel-Einbindung des UserControls aus M11_UserControls-->
+        <usercontrols:ColorPicker x:Name="ColorPicker"/>
+        <CheckBox Content="ShowRectangle" IsChecked="{Binding ElementName=ColorPicker, Path=ShowRectangle}"/>
     </StackPanel>
 </Window>

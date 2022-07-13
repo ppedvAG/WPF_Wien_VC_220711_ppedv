@@ -69,6 +69,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -138,8 +139,14 @@
                          IsChecked="{Binding Geschlecht, Converter={StaticResource gender2bool}, ConverterParameter={x:Static local:Gender.Divers}}"/>
 
         </StackPanel>
+        
+        <local:IntegerUpDown x:Name="Iud_Kinder" 
+                          Grid.Row="6" Grid.Column="1" Margin="2"
+                          Value="{Binding Kinder, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}"
+                          Validation.ErrorTemplate="{StaticResource CtpError}"/>
 
-        <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
+
+        <WrapPanel Grid.Row="7" Grid.ColumnSpan="2"
                    HorizontalAlignment="Right" Margin="0,5">
             <Button x:Name="Btn_Ok"
                     Content="OK"

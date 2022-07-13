@@ -7,12 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="200"
              x:Name="Uc_ColorPicker">
-    
+
+    <!--UserControls werden verwendet um eigene Control-Elemente zu erstellen und zu versiegeln, so dass der Benutzer die Properties
+    der Teilelemente nicht mehr direkt verwendet kann. Vgl. CodeBehind-->
     <UserControl.Resources>
         <local:DoublesToBrushConverter x:Key="doubles2brush"/>
     </UserControl.Resources>
-    
-    
+
+
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -76,6 +78,15 @@
         <Border BorderBrush="Black" BorderThickness="1" 
                 Width="100" Height="100"
                 Grid.Row="5" Grid.ColumnSpan="3">
+
+            <Border.Visibility>
+                <Binding ElementName="Uc_ColorPicker" Path="ShowRectangle">
+                    <Binding.Converter>
+                        <BooleanToVisibilityConverter/>
+                    </Binding.Converter>
+                </Binding>
+            </Border.Visibility>
+
             <Rectangle x:Name="Rct_Output" Width="100" Height="100">
                 <Rectangle.Fill>
                     <MultiBinding>
@@ -90,15 +101,10 @@
                         <Binding ElementName="Sdr_Alpha" Path="Value"/>
                     </MultiBinding>
                 </Rectangle.Fill>
-                
-                <Rectangle.Visibility>
-                    <Binding ElementName="Uc_ColorPicker" Path="ShowRectangle">
-                        <Binding.Converter>
-                            <BooleanToVisibilityConverter/>
-                        </Binding.Converter>
-                    </Binding>
-                </Rectangle.Visibility>
+
             </Rectangle>
         </Border>
     </Grid>
 </UserControl>
+
+<!--Beispiel-Einbindung in M10_Trigger-->
