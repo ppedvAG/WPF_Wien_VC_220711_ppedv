@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
         xmlns:ref="clr-namespace:System.Reflection;assembly=System.Runtime"
         xmlns:local="clr-namespace:Personendatenbank"
         mc:Ignorable="d"
@@ -38,7 +38,7 @@
     </Window.Resources>
 
     <Window.DataContext>
-        <local:Person/>
+        <local:Person Lieblingsfarbe="Red"/>
     </Window.DataContext>
 
     <Grid Margin="10">
@@ -85,11 +85,11 @@
                   Grid.Column="1" Grid.Row="3"
                   IsChecked="{Binding Verheiratet}"/>
 
-        <!--SelectedIndex="{Binding Lieblingsfarbe, Converter={StaticResource colorsConverter}, ConverterParameter={StaticResource Odp_ColorsProperties}}"-->
+        <!--SelectedValue="{Binding Lieblingsfarbe}"-->
         <ComboBox x:Name="Cbb_Lieblingsfarbe"
                   Grid.Column="1" Grid.Row="4"
                   SelectedValuePath="Name"
-                  SelectedValue="{Binding Lieblingsfarbe}"
+                  SelectedIndex="{Binding Lieblingsfarbe, Converter={StaticResource colorsConverter}, ConverterParameter={StaticResource Odp_ColorsProperties}}"
                   ItemsSource="{Binding Source={StaticResource Odp_ColorsProperties}}">
             <ComboBox.ItemTemplate>
                 <DataTemplate DataType="{x:Type ref:PropertyInfo}">
