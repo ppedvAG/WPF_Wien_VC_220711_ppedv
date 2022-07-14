@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul11_UserControls", "Use
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul13_Commands", "Commands\Modul13_Commands.csproj", "{93912ACC-9FFA-41E5-93F2-ADD06D08BF6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{A71D9AD6-718E-432A-9011-BBD373274F1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{93912ACC-9FFA-41E5-93F2-ADD06D08BF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93912ACC-9FFA-41E5-93F2-ADD06D08BF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93912ACC-9FFA-41E5-93F2-ADD06D08BF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

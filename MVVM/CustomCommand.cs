@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Commands
+namespace MVVM
 {
     //Allgemeine generische Commandklasse, welche individuell befüllt werden kann.
 
