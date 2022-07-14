@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Name="Uc_IntUpDown"
              PreviewKeyUp="Uc_IntUpDown_PreviewKeyUp"
-             d:DesignWidth="100">
+             MinWidth="50">
     <Grid>
         <Grid.Resources>
             <Style TargetType="Button">
