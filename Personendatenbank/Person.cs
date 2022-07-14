@@ -30,7 +30,7 @@ namespace Personendatenbank
 
         private Gender geschlecht;
         public Gender Geschlecht { get => geschlecht; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Geschlecht))); geschlecht = value; } }
-        
+
         private int kinder;
         public int Kinder { get => kinder; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Kinder))); kinder = value; } }
 
@@ -79,6 +79,17 @@ namespace Personendatenbank
             this.Geburtsdatum = DateTime.Now;
             this.Geschlecht = Gender.Weiblich;
         }
+
+        public Person(Person altePerson)
+        {
+            this.vorname = altePerson.Vorname;
+            this.nachname = altePerson.Nachname;
+            this.geschlecht = altePerson.Geschlecht;
+            this.verheiratet = altePerson.Verheiratet;
+            this.lieblingsfarbe = altePerson.Lieblingsfarbe;
+            this.kinder = altePerson.Kinder;
+
+            this.geburtsdatum = new DateTime(altePerson.Geburtsdatum.Year, altePerson.Geburtsdatum.Month, altePerson.Geburtsdatum.Day);
+        }
     }
 }
-

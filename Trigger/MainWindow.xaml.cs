@@ -52,7 +52,7 @@ namespace Trigger
 
         private void ColorPicker_PickedColorChanged(object sender, RoutedPropertyChangedEventArgs<SolidColorBrush> e)
         {
-            MessageBox.Show(e.OldValue.ToString() + " " + e.NewValue.ToString());
+            //MessageBox.Show(e.OldValue.ToString() + " " + e.NewValue.ToString());
         }
     }
 }
