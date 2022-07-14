@@ -33,6 +33,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul13_Commands", "Command
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul14_MVVM", "MVVM\Modul14_MVVM.csproj", "{A71D9AD6-718E-432A-9011-BBD373274F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSources", "RelativeSources\RelativeSources.csproj", "{23CBC394-8340-4EA9-BC4E-EB47701E7EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localisation", "Localisation\Localisation.csproj", "{E97E6546-F636-4589-9690-EAB34B1C8EEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A71D9AD6-718E-432A-9011-BBD373274F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CBC394-8340-4EA9-BC4E-EB47701E7EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CBC394-8340-4EA9-BC4E-EB47701E7EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CBC394-8340-4EA9-BC4E-EB47701E7EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CBC394-8340-4EA9-BC4E-EB47701E7EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97E6546-F636-4589-9690-EAB34B1C8EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97E6546-F636-4589-9690-EAB34B1C8EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97E6546-F636-4589-9690-EAB34B1C8EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97E6546-F636-4589-9690-EAB34B1C8EEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

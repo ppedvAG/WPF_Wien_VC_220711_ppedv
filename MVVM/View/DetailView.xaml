@@ -125,8 +125,7 @@
                   Grid.Column="1" Grid.Row="4"
                   ItemsSource="{Binding Source={StaticResource Odp_ColorsProperties}}"
                   SelectedValuePath="Name"
-                  SelectedValue="{Binding NeuePerson.Lieblingsfarbe, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
-                 SelectedIndex="{Binding NeuePerson.Lieblingsfarbe, Converter={StaticResource color2index}, ConverterParameter={StaticResource Odp_ColorsProperties}, ValidatesOnDataErrors=True}"
+                  SelectedIndex="{Binding NeuePerson.Lieblingsfarbe, Converter={StaticResource color2index}, ConverterParameter={StaticResource Odp_ColorsProperties}, ValidatesOnDataErrors=True}"
                 Validation.ErrorTemplate="{StaticResource CtpError}">
             <ComboBox.ItemTemplate>
                 <!--Diese ItemTemplate stellt vor dem entsprechenden Farbnamen ein Recteck in dieser Farbe dar-->
