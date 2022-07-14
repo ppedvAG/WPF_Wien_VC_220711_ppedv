@@ -34,7 +34,7 @@ namespace UserControls
             //Setzen des Quell-Objekts
             binding.Source = Rct_Output;
             //Setzen des Bindings-Modes
-            binding.Mode = BindingMode.OneWay;
+            binding.Mode = BindingMode.TwoWay;
             //Setzen des UpdateSourceTriggers
             binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
 
