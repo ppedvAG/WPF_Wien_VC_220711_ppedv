@@ -7,37 +7,31 @@ using System.Windows.Input;
 
 namespace MVVM
 {
-    //Allgemeine generische Commandklasse, welche individuell befüllt werden kann.
-
-    //ICommand ermöglicht dieser Klasse, als Command verwendet zu werden
+    //vgl. M13_Commands
     public class CustomCommand : ICommand
     {
-        //Delegates zum Speichern der Logik
         public Action<object> ExecuteMethode { get; set; }
         public Func<object, bool> CanExecuteMethode { get; set; }
 
-        //Konstruktor
         public CustomCommand(Action<object> exe, Func<object, bool> can = null)
         {
             ExecuteMethode = exe;
 
-            CanExecuteMethode = (can == null) ? (p => true) : can;
+            if (can == null) CanExecuteMethode = p => true;
+            else CanExecuteMethode = can;
         }
 
-        //Anmeldung des Commands im CommandManager
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
 
-        //Bedingung für die Ausführung
         public bool CanExecute(object parameter)
         {
             return CanExecuteMethode(parameter);
         }
 
-        //Aktion bei Ausführung
         public void Execute(object parameter)
         {
             ExecuteMethode(parameter);
