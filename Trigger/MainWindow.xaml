@@ -62,8 +62,11 @@
         <Separator Margin="10"/>
 
         <!--Beispiel-Einbindung des UserControls aus M11_UserControls-->
-        <usercontrols:ColorPicker x:Name="ColorPicker" PickedColorChanged="ColorPicker_PickedColorChanged"/>
-        <CheckBox Content="ShowRectangle" IsChecked="{Binding ElementName=ColorPicker, Path=ShowRectangle}"
+        <usercontrols:ColorPicker x:Name="ColorPicker" PickedColorChanged="ColorPicker_PickedColorChanged">
+            Mein Content
+            </usercontrols:ColorPicker>
+            <!--Bsp-Verwendung einer AttachedProperty aus der ColorPicker-Klasse-->
+            <CheckBox Content="ShowRectangle" IsChecked="{Binding ElementName=ColorPicker, Path=ShowRectangle}"
                   usercontrols:ColorPicker.Count="3"/>
     </StackPanel>
 </Window>
