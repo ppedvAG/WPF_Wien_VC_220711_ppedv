@@ -26,20 +26,34 @@ namespace Localisation
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = this;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Testen der aktuellen Sprache
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
+                //Ändern der Sprache
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
 
+            //Neu-Öffnen des aktuellen Fensters (mit neuer Sprache)
             new MainWindow().Show();
 
+            //Schließen des alten Fensters
             this.Close();
         }
+
+        public TestEnum SelectedEnumValue { get; set; }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Tbl_SelectedEnum.Text = SelectedEnumValue.ToString();
+        }
     }
+
     public enum TestEnum { TestEnum_1, TestEnum_2, TestEnum_3, TestEnum_4 }
 
     //Converter zum Umwandeln des Enum-Werts in ComboBoxEintrag-String
