@@ -66,7 +66,7 @@
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
                             <Setter Property="Background" Value="{Binding Lieblingsfarbe, Converter={StaticResource color2brush}}"/>
-                        </Style>
+                          </Style>
                     </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
                 <DataGridCheckBoxColumn Header="Verheiratet" Binding="{Binding Verheiratet}" Width="Auto"/>

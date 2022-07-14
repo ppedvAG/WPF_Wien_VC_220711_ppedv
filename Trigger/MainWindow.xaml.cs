@@ -50,7 +50,7 @@ namespace Trigger
             Spl_Main.Background = new SolidColorBrush(Colors.Red);
         }
 
-        private void ColorPicker_PickedColorChanged(object sender, RoutedPropertyChangedEventArgs<SolidColorBrush> e)
+        private void ColorPicker_PickedColorChanged(object sender, RoutedPropertyChangedEventArgs<Brush> e)
         {
             //MessageBox.Show(e.OldValue.ToString() + " " + e.NewValue.ToString());
         }

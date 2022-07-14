@@ -48,9 +48,9 @@ namespace UserControls
         //in einer eigenen Liste abgelegt. Durch diese Mechanik werden Bindungen und Co in WPF erst möglich.
 
         //Getter/Setter der DependencyProperty
-        public SolidColorBrush PickedColor
+        public Brush PickedColor
         {
-            get { return (SolidColorBrush)GetValue(PickedColorProperty); }
+            get { return (Brush)GetValue(PickedColorProperty); }
             set { SetValue(PickedColorProperty, value); }
         }
 
@@ -59,25 +59,24 @@ namespace UserControls
             DependencyProperty.Register
             (
                 "PickedColor",
-                typeof(SolidColorBrush),
+                typeof(Brush),
                 typeof(ColorPicker),
                 new PropertyMetadata
                 (
-                    default(SolidColorBrush),
-                    (s, e) => (s as UIElement)?.RaiseEvent(new RoutedPropertyChangedEventArgs<SolidColorBrush>(e.OldValue as SolidColorBrush, e.NewValue as SolidColorBrush, PickedColorChangedEvent)),
-                    (dpo, value) => { return (dpo as ColorPicker).Sdr_Alpha.Value == 150 ? new SolidColorBrush(Colors.Red) : value; }
+                    default(Brush)
+                    //(s, e) => (s as UIElement)?.RaiseEvent(new RoutedPropertyChangedEventArgs<Brush>(e.OldValue as Brush, e.NewValue as Brush, PickedColorChangedEvent))
                 )
             );
 
 
         //PickedColorChangedEvent
-        public event RoutedPropertyChangedEventHandler<SolidColorBrush> PickedColorChanged
+        public event RoutedPropertyChangedEventHandler<Brush> PickedColorChanged
         {
             add { AddHandler(PickedColorChangedEvent, value); }
             remove { RemoveHandler(PickedColorChangedEvent, value); }
         }
 
-        public static readonly RoutedEvent PickedColorChangedEvent = EventManager.RegisterRoutedEvent("PickedColorChanged", RoutingStrategy.Direct, typeof(RoutedPropertyChangedEventHandler<SolidColorBrush>), typeof(ColorPicker));
+        public static readonly RoutedEvent PickedColorChangedEvent = EventManager.RegisterRoutedEvent("PickedColorChanged", RoutingStrategy.Direct, typeof(RoutedPropertyChangedEventHandler<Brush>), typeof(ColorPicker));
 
         //ShowRectangleProperty
         public Boolean ShowRectangle
